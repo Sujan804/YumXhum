@@ -1,0 +1,56 @@
+*{
+    margin: 0px 0px 0px 0px;
+    font-family: 'Poppins' sans-serif;
+}
+.header{
+    width: 100%;
+    margin: 0px 0px;
+    background-color:aliceblue;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+
+}
+.logo{
+    padding: 30px 0px;
+    font-size: 35px;
+    text-align: center;
+}
+.fa-circle-dot{
+    color: rgb(239, 157, 99);
+}
+.menu{
+    margin: 0px 120px;
+}
+.menu ul{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+}
+.menu ul li{
+    padding-top: 40px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #1f2e4b;
+    transition-duration: 100ms;
+}
+.menu ul li a:hover{
+    border-bottom: dashed rgb(115, 97, 97) 3px;
+    border-radius:6px;
+    
+}
+.reservationBtn{
+    padding: 30px 0px;
+    background-color: rgb(62, 58, 169);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border: 0px;
+}
+.fa-arrow-right{
+    transform: rotate(-45deg);
+}

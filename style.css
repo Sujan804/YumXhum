@@ -8,13 +8,25 @@
     background-color:aliceblue;
     
 }
+.heroSectionSearch{
+    position: absolute;
+    z-index: 3;
+    padding: 20px;
+    background-color: rgb(255, 30, 14);
+    border-radius: 50%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 0px;
+}
 .grid-container{
     display: grid;
     grid-template-columns: 20% 60% 20%;
 
 }
 .logo{
-    padding: 30px 0px;
+    padding: 25px 0px;
     font-size: 35px;
     text-align: center;
 }
@@ -22,7 +34,7 @@
     color: rgb(239, 157, 99);
 }
 .menu{
-    margin: 0px 120px;
+    margin: 0% 20%;
 }
 .menu ul{
     /* display: flex; */
@@ -37,11 +49,30 @@
     text-decoration: none;
     color: #1f2e4b;
     transition-duration: 100ms;
+    position: relative;
 }
-.menu ul li a:hover{
-    border-bottom: dashed rgb(115, 97, 97) 3px;
-    border-radius:6px;
-    
+.menu ul li a::after{
+    transform: scaleY(1.2);
+    position:absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    height: 100%;
+    width: 0%;
+    border-bottom: 3px solid grey;
+    transition-duration: 500ms;
+   
+}
+.menu ul li a:hover::after{
+
+    position:absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid grey;
+   
 }
 .reservationBtn{
     padding: 30px 0px;
@@ -53,4 +84,126 @@
 }
 .fa-arrow-right{
     transform: rotate(-45deg);
+}
+
+/* hero section */
+
+.heroSection{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+.heroSectionLeft{
+    background-color: rgb(182, 224, 225);
+    width: 100%;
+    position: relative;
+}
+.roundShape{
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 200px;
+}
+.heroLeftTitle{
+    padding-left: 25%;
+    padding-top: 10%;
+    z-index: 2;
+}
+.hero-facilities{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 3px;
+    margin-left: 25%;
+    margin-right: 40%;
+    bottom: 20%;
+    padding: 0;
+}
+.spa{
+    background-color: rgb(234, 196, 127);
+    text-align: center;
+    padding-top: 10px;
+    margin-top:5px;
+}
+.hotel{
+    background-color: rgb(167, 252, 242);
+    text-align: center;
+    padding-top:13px;
+    margin: 5px;
+}
+.breakfast{
+    background-color: rgb(234, 196, 127);
+    text-align: center;
+    padding-top: 10px;
+    margin-top:5px;
+}
+.hero-text{
+    font-size: 60px;
+
+}
+.allBtn{
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    right: -25%;
+    bottom: 0;
+}
+.subBtn{
+    padding-top: 20%;
+    padding-bottom: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    position: relative;
+}
+.checkIn::after{
+    content: '';
+    position:absolute;
+    right: 0;
+    top: 0;
+    padding-top: 20%;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-right: 3px solid grey;
+}
+.checkOut::after{
+    content: '';
+    position:absolute;
+    right: 0;
+    top: 0;
+    padding-top: 20%;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-right: 3px solid grey;
+}
+.checkAvail{
+    background-color: #1f2e4b;
+    color: white;
+    font-weight: 500;
+    border: 0px;
+}
+.heroSectionRight img{
+    width: 100%;
+    height: 100%;
+    
+}
+.calendar{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.calendarDate{
+    border: 0px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 15px;
+    font-weight: 1000px;
+}
+.calenderMonth{
+    border: 0px;
+    text-align: center;
+    margin-right: 15px;
 }

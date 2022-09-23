@@ -208,3 +208,11 @@
     text-align: center;
     margin-right: 15px;
 }
+.guests{
+    position: relative;
+}
+.guestsInput{
+    border: 0px;
+    font-size: 30px;
+    width: 80px;
+}
